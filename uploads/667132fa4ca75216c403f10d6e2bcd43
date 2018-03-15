@@ -1,0 +1,14 @@
+-module(fizzbuzz).
+
+-export([fizzbuzz/1]).
+
+fizzbuzz (A) when A rem 15 == 0 ->
+    fizzbuzz;
+fizzbuzz (A) when A rem 5 == 0 ->
+    buzz;
+fizzbuzz (A) when A rem 3 == 0 ->
+    fizz;
+fizzbuzz (A) ->
+    A.
+
+% EOF
